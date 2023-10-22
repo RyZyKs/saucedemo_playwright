@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "20.6.1",
+    "npm": "10.2.1"
+  },
   "scripts": {},
   "keywords": [],
-  "author": "",
+  "author": "PG",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.39.0",
