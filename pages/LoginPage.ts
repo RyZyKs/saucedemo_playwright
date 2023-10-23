@@ -1,10 +1,7 @@
 import { expect, type Page } from "@playwright/test";
 
 export default class LoginPage {
-  protected readonly page: Page;
-  constructor(page: Page) {
-    this.page = page;
-  }
+  constructor(protected readonly page: Page) {}
 
   //--------------------------------------------------------
   // Locators.
@@ -53,14 +50,8 @@ export default class LoginPage {
   }
 
   /**
-   * This function checks if the page is opened.
-   */
-  public async checkIfPageIsOpened() {
-    await expect(this.page.getByText("Products")).toBeVisible();
-  }
-
-  /**
-   * This function moves user to checkout step one page.
+   * This function logs in the user.
+   * 
    * @username user's username
    * @string user's password
    */
