@@ -37,4 +37,4 @@ Initialisation of the test run is very easy, just put the following commands int
 $ npx playwright test --ui
 ```
 - you can also can use other alternatives described here:
-* [Running and debugging tests docs](https://playwright.dev/docs/running-tests)
+[Running and debugging tests docs](https://playwright.dev/docs/running-tests)
